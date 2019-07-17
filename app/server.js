@@ -16,7 +16,7 @@ app.use("/images", express.static(__dirname + '/static/images'));
 // Backend service invocation configuration
 var backendHost = process.env.BACKEND_HOST || 'localhost';
 var backendPort = process.env.BACKEND_PORT || '9080';
-var backendVersion = 'v2';
+var backendVersion = 'v3';
 
 var userCheckURL = 'http://' + backendHost + ':' + backendPort + '/demo/api/user/' + backendVersion + '/check';
 var checkStatus;
